@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.typography_h1 {
+    @apply text-6xl font-semibold;
+}
+.typography_h2 {
+    @apply text-xl md:text-2xl font-semibold;
+}
+.icons {
+    @apply text-[0.9rem];
+}
+.buttons {
+    @apply px-6 text-sm border rounded-full transition-all hover:border-[#6794D8] hover:text-[#6794D8] hover:bg-[#6794d827];
+}
+.navbar_items {
+    @apply text-[0.75rem] font-semibold text-[#000000b9] px-10 py-2 rounded-md transition-all hover:bg-[#2B2B2B]  hover:text-[#DADEDD];
+}
+.mask {
+    mask: linear-gradient(
+        90deg,
+        transparent,
+        #000000 5%,
+        #000000 94%,
+        transparent
+    );
+}
+.scroll {
+    animation: scroll 20s linear infinite;
+}
+@keyframes scroll {
+    to {
+        transform: translate(calc(-50% - 1rem));
+    }
+}
