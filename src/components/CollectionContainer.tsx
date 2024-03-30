@@ -1,6 +1,6 @@
 import CollectionChild from './collectionChild'
 import { newCollectionData } from '../constants'
-const NewCollection = () => {
+const CollectionContainer = () => {
     return (
         <>
             <section className='px-16 mt-20 md:px-24'>
@@ -16,4 +16,4 @@ const NewCollection = () => {
         </>
     )
 }
-export default NewCollection
+export default CollectionContainer

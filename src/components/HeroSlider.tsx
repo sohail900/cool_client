@@ -2,7 +2,7 @@ import ReactSlick from 'react-slick'
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
 import { heroContents } from '../constants'
-const Slider = () => {
+export const Slider = () => {
     const settings = {
         dots: true,
         slidesToShow: 1,
@@ -38,5 +38,3 @@ const Slider = () => {
         </>
     )
 }
-
-export default Slider

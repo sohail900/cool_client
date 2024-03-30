@@ -1,5 +1,5 @@
 //import { ArrowLeft, ArrowRight } from 'lucide-react'
-import Slider from './slider'
+import { Slider } from './Slider'
 const Hero = () => {
     return (
         <>
