@@ -24,6 +24,9 @@
 .navbar_items {
     @apply text-[0.75rem] font-semibold text-[#000000b9] px-10 py-2 rounded-md transition-all hover:bg-[#2B2B2B]  hover:text-[#DADEDD];
 }
+.conatiner_name {
+    @apply text-2xl font-semibold text-text_color mb-8;
+}
 .mask {
     mask: linear-gradient(
         90deg,
