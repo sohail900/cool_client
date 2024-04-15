@@ -27,6 +27,9 @@
 .conatiner_name {
     @apply text-2xl font-semibold text-text_color mb-8;
 }
+.carosal_button {
+    @apply bg-[#E5E5E5] w-10 h-10 rounded-full grid place-items-center transition-all ease-linear hover:bg-[#CACACB];
+}
 .mask {
     mask: linear-gradient(
         90deg,

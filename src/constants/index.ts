@@ -1,4 +1,12 @@
 import {
+    bestSelling1,
+    bestSelling2,
+    bestSelling3,
+    bestSelling4,
+    bestSelling5,
+    bestSelling6,
+    bestSelling7,
+    bestSelling8,
     jordan1,
     jordan4,
     jordan5,
@@ -93,5 +101,56 @@ export const newCollectionData: TCOLLECTION[] = [
         title: 'Nike Air Max 90 GORE-TEX',
         price: 120,
         image: nike7,
+    },
+]
+//# Constants Data for Best Selling
+export const bestSellingData: IHERO[] = [
+    {
+        itemId: 1,
+        title: 'Air Jordan 4 Retro',
+        price: 210,
+        image: bestSelling1,
+    },
+    {
+        itemId: 2,
+        title: 'Nike Air Pegasus 89 G NRG',
+        price: 140,
+        image: bestSelling2,
+    },
+    {
+        itemId: 3,
+        title: 'Nike Air Max 1',
+        price: 160,
+        image: bestSelling3,
+    },
+    {
+        itemId: 4,
+        title: 'Nike Air Zoom Infinity Tour NRG',
+        price: 190,
+        image: bestSelling4,
+    },
+    {
+        itemId: 5,
+        title: 'Nike G.T. Cut 3',
+        price: 190,
+        image: bestSelling5,
+    },
+    {
+        itemId: 6,
+        title: 'Ja 1 "Vacation"',
+        price: 120,
+        image: bestSelling6,
+    },
+    {
+        itemId: 7,
+        title: 'Sabrina 1 "Exclamat!on"',
+        price: 130,
+        image: bestSelling7,
+    },
+    {
+        itemId: 8,
+        title: 'Nike Zoom Vomero 5',
+        price: 160,
+        image: bestSelling8,
     },
 ]

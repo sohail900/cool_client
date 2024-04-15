@@ -27,7 +27,7 @@ export const Slider = () => {
                                     width={380}
                                     className='max-w-[100%]'
                                 />
-                                <h2 className='text-4xl text-right  right-5 bottom-10  font-bold text-[#aaaeadc9]'>
+                                <h2 className='text-4xl font-bold text-[#aaaeadc9] translate-y-20'>
                                     ${elem.price}
                                 </h2>
                             </div>

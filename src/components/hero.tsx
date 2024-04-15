@@ -5,7 +5,7 @@ const Hero = () => {
         <>
             <main className='w-[100vw] h-[100dvh] bg-colorBackground flex place-content-center flex-col px-16 md:px-24 pt-24 pb-12  overflow-hidden relative'>
                 <h3 className='text-3xl font-semibold text-[#aaaeadc9] absolute top-28'>
-                    NIKE - COOL
+                    NIKE
                 </h3>
                 <h1 className='text-[6rem] text-center  -mt-7 md:text-[10rem] lg:text-[15rem] lg:-mt-20 md:-mt-10  font-extrabold text-[#DADEDD] absolute left-[50%] translate-x-[-50%]'>
                     SHOES

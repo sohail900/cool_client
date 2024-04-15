@@ -29,3 +29,8 @@ export interface ICOLLECTION {
     }
     idx: number
 }
+//....
+export type IPRODUCT = {
+    index: number
+    elem: IHERO
+}
