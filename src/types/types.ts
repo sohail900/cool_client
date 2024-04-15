@@ -1,4 +1,5 @@
 import { Dispatch, SetStateAction } from 'react'
+import Slider from 'react-slick'
 export type TNAVBAR = {
     itemId: number
     itemName: string
@@ -34,3 +35,5 @@ export type IPRODUCT = {
     index: number
     elem: IHERO
 }
+//..
+export type TSlider = React.RefObject<Slider>

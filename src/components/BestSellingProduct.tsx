@@ -3,8 +3,8 @@ import { IPRODUCT } from '../types/types'
 const BestSellingProduct: FC<IPRODUCT> = ({ index, elem }) => {
     return (
         <>
-            <div className='flex gap-4' key={index}>
-                <div className='w-[330px] h-auto mb-10 cursor-pointer'>
+            <div className='flex items-center justify-center gap-4' key={index}>
+                <div className='w-[400px] md:w-[300px] lg:w-[260px] xl:w-[320px] h-auto mb-10 cursor-pointer'>
                     <img
                         src={elem.image}
                         alt={elem.title}
