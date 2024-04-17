@@ -14,7 +14,7 @@ const BestSellingProduct: FC<IPRODUCT> = ({ index, elem }) => {
                         <h2 className='text-[1.2rem]  font-semibold'>
                             {elem.title}
                         </h2>
-                        <p className='text-gray-500 '>Gender</p>
+                        <p className='text-text_color2 -mt-1'>{elem.type}</p>
                         <p className='text-[1.1rem] font-semibold'>
                             ${elem.price}
                         </p>

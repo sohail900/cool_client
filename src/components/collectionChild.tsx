@@ -9,6 +9,7 @@ const CollectionChild = ({ elem, idx }: ICOLLECTION) => {
             >
                 <div className='text-left absolute px-4 py-3 z-10'>
                     <h2 className='text-xl'>{elem.title}</h2>
+                    <p>{}</p>
                     <p className='font-bold text-[#0000009d]'>${elem.price}</p>
                 </div>
                 <img

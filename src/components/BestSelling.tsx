@@ -2,7 +2,7 @@ import { useRef } from 'react'
 import ReactSlick from 'react-slick'
 import { ChevronLeft, ChevronRight } from 'lucide-react'
 import BestSellingProduct from './BestSellingProduct'
-import { bestSellingData } from '../constants'
+import { bestProducts } from '../constants'
 import { handlePre, handleNext } from '../utility/utility'
 const settings = {
     slidesToShow: 3,
@@ -40,9 +40,9 @@ const BestSelling = () => {
     const sliderRef = useRef<ReactSlick | null>(null)
     return (
         <>
-            <section className='mt-20 flex justify-between'>
+            <section className='mt-32 flex justify-between'>
                 <h2 className='conatiner_name'>Best Selling</h2>
-                <div className='pr-10 flex gap-4'>
+                <div className='pr-10 flex gap-4 mb-5'>
                     <button
                         className='carosal_button'
                         onClick={() => handlePre(sliderRef)}
@@ -58,7 +58,7 @@ const BestSelling = () => {
                 </div>
             </section>
             <ReactSlick ref={sliderRef} {...settings}>
-                {bestSellingData?.map((elem, index) => {
+                {bestProducts?.map((elem, index) => {
                     return (
                         <>
                             <BestSellingProduct elem={elem} index={index} />

@@ -6,7 +6,6 @@ import 'slick-carousel/slick/slick-theme.css'
 import { handlePre, handleNext } from '../utility/utility'
 import { heroContents } from '../constants'
 const settings = {
-    className: 'w-[100vw] sm:w-full h-[300px] flex items-center justify-center',
     slidesToShow: 1,
     slidesToScroll: 1,
     infinite: true,
@@ -20,7 +19,11 @@ export const Slider = () => {
     const sliderRef = useRef<ReactSlider>(null)
     return (
         <>
-            <ReactSlider ref={sliderRef} {...settings}>
+            <ReactSlider
+                ref={sliderRef}
+                {...settings}
+                className='w-[100vw] sm:w-full h-[300px] flex items-center justify-center'
+            >
                 {heroContents?.map((elem, index) => {
                     return (
                         <>
@@ -32,6 +35,7 @@ export const Slider = () => {
                                     src={elem.image}
                                     alt='hero-image'
                                     width={380}
+                                    loading='lazy'
                                     className='max-w-[100%] mt-24'
                                 />
                                 <h2 className='text-4xl font-bold text-[#aaaeadc9] mt-72 hidden sm:block'>

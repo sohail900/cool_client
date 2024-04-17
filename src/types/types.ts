@@ -5,15 +5,10 @@ export type TNAVBAR = {
     itemName: string
     link: string
 }
-export interface IHERO {
+export interface ISHOEPRO {
     itemId: number
     title: string
-    price: number
-    image: string
-}
-export type TCOLLECTION = {
-    id: number
-    title: string
+    type: string
     price: number
     image: string
 }
@@ -23,7 +18,7 @@ export interface IMENU {
 
 export interface ICOLLECTION {
     elem: {
-        id: number
+        itemId: number
         title: string
         price: number
         image: string
@@ -33,7 +28,7 @@ export interface ICOLLECTION {
 //....
 export type IPRODUCT = {
     index: number
-    elem: IHERO
+    elem: ISHOEPRO
 }
 //..
 export type TSlider = React.RefObject<Slider>

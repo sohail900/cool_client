@@ -4,6 +4,9 @@ export default {
     content: ['./src/**/*.{js,jsx,tsx,jsx}'],
     theme: {
         extend: {
+            fontFamily: {
+                merri: ['Merriweather', 'serif'],
+            },
             backgroundColor: {
                 colorBackground: '#ECF0EF',
                 cardColor: '#FEEECC',
@@ -11,6 +14,7 @@ export default {
             },
             textColor: {
                 text_color: '#3C3C3C',
+                text_color2: '#626263',
             },
             screen: {
                 sm: '490px',
