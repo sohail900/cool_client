@@ -9,7 +9,7 @@ export const ResponsiveNav = () => {
                     return (
                         <>
                             <li key={index} className='navbar_items'>
-                                <NavLink to={`/${link}`}>{itemName}</NavLink>
+                                <NavLink to={`${link}`}>{itemName}</NavLink>
                             </li>
                         </>
                     )

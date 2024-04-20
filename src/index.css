@@ -26,10 +26,23 @@
     @apply text-[0.75rem] font-semibold text-[#000000b9] px-10 py-2 rounded-md transition-all hover:bg-[#2B2B2B]  hover:text-[#DADEDD];
 }
 .conatiner_name {
-    @apply text-2xl font-semibold text-text_color mb-12;
+    @apply text-[1.6rem] font-semibold text-text_color mb-12;
 }
 .carosal_button {
     @apply bg-[#E5E5E5] w-10 h-10 rounded-full grid place-items-center transition-all ease-linear hover:bg-[#CACACB];
+}
+.all_product_nav_buttons {
+    @apply py-1 px-2 rounded-md w-32 font-semibold border border-[rgba(0,0,0,0)]  transition ease-in-out  hover:bg-[#ffffff] hover:shadow-lg shadow-[rgba(0,0,0,0.3)] hover:border-[rgba(0,0,0,0)];
+}
+.active {
+    @apply font-bold text-[#000000];
+}
+
+.gap_line {
+    @apply w-[5px] h-[50px] rounded-3xl bg-[rgba(22,43,82,0.11)];
+}
+.input_field {
+    @apply w-[400px] border-2 bg-[#6794d846] text-slate-700 px-3 py-3 rounded-xl text-[1.10rem] font-semibold;
 }
 .mask {
     mask: linear-gradient(
@@ -45,6 +58,6 @@
 }
 @keyframes scroll {
     to {
-        transform: translate(calc(-50% - 1rem));
+        transform: translate(calc(-30px - 1rem));
     }
 }

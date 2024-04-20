@@ -8,7 +8,7 @@ const Navbar = () => {
     return (
         <>
             <nav
-                className='w-[100vw] h-auto fixed top-0 flex items-center justify-between  py-4 *:px-[1rem] text-[#000000fd] backdrop-blur-lg  md:px-[2rem] 
+                className='w-[100vw] h-auto fixed top-0 flex items-center justify-between  py-4 *:px-[1rem] text-[#000000fd] backdrop-blur-lg backdrop-hue-rotate-15   md:px-[2rem] 
 			xl:px-[3.5rem]  z-20'
             >
                 <h3 className='typography_h2'>COOL KICKS</h3>
@@ -21,7 +21,7 @@ const Navbar = () => {
                                     key={index}
                                     className='text-[0.75rem] font-semibold text-[#000000b9] '
                                 >
-                                    <NavLink to={`/${link}`}>
+                                    <NavLink to={`${link}`} className=''>
                                         {itemName}
                                     </NavLink>
                                 </li>

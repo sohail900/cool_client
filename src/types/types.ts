@@ -20,6 +20,7 @@ export interface ICOLLECTION {
     elem: {
         itemId: number
         title: string
+        type: string
         price: number
         image: string
     }

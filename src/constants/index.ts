@@ -24,7 +24,7 @@ export const navBarItems: TNAVBAR[] = [
     {
         itemId: 1,
         itemName: 'HOME',
-        link: '/home',
+        link: '/',
     },
     {
         itemId: 2,
@@ -107,7 +107,7 @@ export const newProducts: ISHOEPRO[] = [
     },
     {
         itemId: 7,
-        title: 'Nike Air Max 90 GORE-TEX',
+        title: 'Nike Air Max 90 Gore-Tex',
         type: "Men's Shoes",
         price: 120,
         image: nike7,
@@ -172,4 +172,4 @@ export const bestProducts: ISHOEPRO[] = [
         image: bestSelling8,
     },
 ]
-export const allProducts = [...heroContents, ...newProducts, ...bestProducts]
+export const allProducts = [...newProducts, ...bestProducts]

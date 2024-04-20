@@ -1,13 +1,14 @@
-import CollectionChild from './CollectionChild'
 import { newProducts } from '../constants'
+import ProductCard from './ProductCard'
+
 const CollectionContainer = () => {
     return (
         <>
             <section className='mt-20'>
                 <h2 className='conatiner_name'>New Collection 2024</h2>
-                <div className='flex  flex-wrap items-center gap-8'>
+                <div className='flex  flex-wrap items-center gap-8 justify-center'>
                     {newProducts.map((elem, index) => (
-                        <CollectionChild elem={elem} idx={index} />
+                        <ProductCard elem={elem} idx={index} />
                     ))}
                 </div>
             </section>
