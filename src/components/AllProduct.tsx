@@ -18,21 +18,31 @@ const AllProduct = () => {
             <section className='mt-20 mb-10'>
                 <h2 className='conatiner_name mb-3'>All Products</h2>
                 <div className='flex justify-center'>
-                    <div className='w-max flex justify-center mb-10 bg-colorBackground p-[0.35rem]  rounded-md overflow-hidden shadow-sm shadow-gray-300'>
+                    <div className='w-max flex justify-center mb-10 bg-colorBackground p-[0.35rem]  rounded-md overflow-hidden shadow-sm shadow-gray-300 gap-2'>
                         <button
-                            className='all_product_nav_buttons'
+                            className={`all_product_nav_buttons ${
+                                showTitle == 'All' ? 'active_button' : ''
+                            }`}
                             onClick={() => handleClick('All')}
                         >
                             All
                         </button>
                         <button
-                            className='all_product_nav_buttons'
+                            className={`all_product_nav_buttons ${
+                                showTitle == "Men's Shoes"
+                                    ? 'active_button'
+                                    : ''
+                            }`}
                             onClick={() => handleClick("Men's Shoes")}
                         >
                             Men
                         </button>
                         <button
-                            className='all_product_nav_buttons'
+                            className={`all_product_nav_buttons ${
+                                showTitle == "Women's Shoes"
+                                    ? 'active_button'
+                                    : ''
+                            }`}
                             onClick={() => handleClick("Women's Shoes")}
                         >
                             Women

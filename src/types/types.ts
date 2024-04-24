@@ -33,3 +33,11 @@ export type IPRODUCT = {
 }
 //..
 export type TSlider = React.RefObject<Slider>
+///props type
+export interface IInputProps<T> {
+    value: string
+    onChange: (e: T) => void
+    name: string
+    type: string
+    placeholder: string
+}

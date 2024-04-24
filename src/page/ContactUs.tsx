@@ -4,7 +4,7 @@ const ContactUs = () => {
     return (
         <section className='w-[100vw] h-auto flex justify-center items-center flex-col px-6 md:px-8'>
             <h1 className='conatiner_name mb-8 mt-24'>CONTACT US</h1>
-            <div className='w-full h-auto flex flex-wrap justify-around items-center gap-3 '>
+            <div className='w-full h-auto flex flex-col  justify-around items-center gap-3 md:flex-row '>
                 <div className='flex flex-col gap-4'>
                     <div>
                         <h2 className='flex items-center gap-2  text-[1.35rem] font-semibold text-text_color mb-1 '>

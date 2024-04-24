@@ -1,3 +1,4 @@
+import { Outlet } from 'react-router-dom'
 import Hero from '../components/Hero'
 import NewCollection from '../components/CollectionContainer'
 import BestSelling from '../components/BestSelling'
@@ -8,12 +9,16 @@ export default function Home() {
         <>
             <main>
                 <Hero />
-                <section className='px-10 md:px-24'>
+                <section
+                    className='px-[2rem] md:px-[3.5rem] 
+			'
+                >
                     <NewCollection />
                     <BestSelling />
                     <AllProduct />
                 </section>
             </main>
+            <Outlet />
         </>
     )
 }

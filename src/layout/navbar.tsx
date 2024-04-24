@@ -8,8 +8,8 @@ const Navbar = () => {
     return (
         <>
             <nav
-                className='w-[100vw] h-auto fixed top-0 flex items-center justify-between  py-4 *:px-[1rem] text-[#000000fd] backdrop-blur-lg backdrop-hue-rotate-15   md:px-[2rem] 
-			xl:px-[3.5rem]  z-20'
+                className='w-[100vw] h-auto fixed top-0 flex items-center justify-between   text-[#000000fd] backdrop-blur-lg  py-4  px-[2rem] 
+			xl:px-[3.5rem] z-20'
             >
                 <h3 className='typography_h2'>COOL KICKS</h3>
                 <ul className='hidden items-center gap-8 pt-1 lg:flex'>
@@ -19,7 +19,7 @@ const Navbar = () => {
                             <>
                                 <li
                                     key={index}
-                                    className='text-[0.75rem] font-semibold text-[#000000b9] '
+                                    className='text-xs font-semibold text-[#000000b9] '
                                 >
                                     <NavLink to={`${link}`} className=''>
                                         {itemName}
@@ -30,16 +30,16 @@ const Navbar = () => {
                     })}
                 </ul>
                 <div className='flex items-center gap-4'>
-                    <button className=' text-sm hidden lg:block'>
-                        Sign Up
+                    <button className='hidden font-semibold text-xs lg:block'>
+                        LOGIN
                     </button>
-                    <button className='buttons py-[0.20rem]  border-[#000] hidden lg:block'>
-                        Sign In
+                    <button className='buttons py-[0.24rem] font-semibold text-xs  border-[#000] hidden lg:block'>
+                        REGISTER
                     </button>
                     <NavChildren menu={setMenu} />
                 </div>
-                {menu && <ResponsiveNav />}
             </nav>
+            {menu && <ResponsiveNav setMenu={setMenu} />}
         </>
     )
 }

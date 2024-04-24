@@ -20,10 +20,10 @@
     @apply text-[0.9rem];
 }
 .buttons {
-    @apply px-6 text-sm border rounded-full transition-all hover:border-[#6794D8] hover:text-[#6794D8] hover:bg-[#6794d827];
+    @apply px-4  border rounded-full transition-all hover:border-[#000000] hover:text-[#ffffff] hover:bg-[#000000];
 }
 .navbar_items {
-    @apply text-[0.75rem] font-semibold text-[#000000b9] px-10 py-2 rounded-md transition-all hover:bg-[#2B2B2B]  hover:text-[#DADEDD];
+    @apply text-[0.75rem] font-semibold text-[#000000b9] px-10 py-2 transition-all hover:bg-[#4e4e4e23];
 }
 .conatiner_name {
     @apply text-[1.6rem] font-semibold text-text_color mb-12;
@@ -34,15 +34,18 @@
 .all_product_nav_buttons {
     @apply py-1 px-2 rounded-md w-32 font-semibold border border-[rgba(0,0,0,0)]  transition ease-in-out  hover:bg-[#ffffff] hover:shadow-lg shadow-[rgba(0,0,0,0.3)] hover:border-[rgba(0,0,0,0)];
 }
+.active_button {
+    @apply bg-[#ffffff]  shadow-md shadow-[rgba(0,0,0,0.3)];
+}
 .active {
     @apply font-bold text-[#000000];
 }
 
 .gap_line {
-    @apply w-[5px] h-[50px] rounded-3xl bg-[rgba(22,43,82,0.11)];
+    @apply w-[50px] h-[5px] rounded-3xl bg-[rgba(22,43,82,0.11)] md:w-[5px] md:h-[50px];
 }
 .input_field {
-    @apply w-[400px] border-2 bg-[#6794d846] text-slate-700 px-3 py-3 rounded-xl text-[1.10rem] font-semibold;
+    @apply w-auto border-2 bg-[#6794d815] text-slate-700 px-3 py-3 rounded-xl text-[1.10rem] font-semibold sm:w-[400px];
 }
 .mask {
     mask: linear-gradient(
