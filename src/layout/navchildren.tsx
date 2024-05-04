@@ -13,7 +13,7 @@ export const NavChildren = ({ menu }: IMENU) => {
                 >
                     <MenuIcon
                         name='icon'
-                        size={18}
+                        size={20}
                         cursor={'pointer'}
                         color='#000000b9'
                     />
@@ -21,18 +21,21 @@ export const NavChildren = ({ menu }: IMENU) => {
                 <span className='p-1 bg-[#DADEDD] rounded-full'>
                     <UserCircle2
                         name='icon'
-                        size={18}
+                        size={20}
                         cursor={'pointer'}
                         color='#000000b9'
                     />
                 </span>
-                <span className='p-1 bg-[#DADEDD] rounded-full'>
+                <span className='p-1 bg-[#DADEDD] rounded-full relative'>
                     <ShoppingBagIcon
                         name='icon'
-                        size={18}
+                        size={20}
                         cursor={'pointer'}
                         color='#000000b9'
                     />
+                    <span className='absolute -top-2 -right-2 py-[0.10rem] px-[0.4rem]  bg-black/90 text-white  rounded-full text-xs grid place-items-center font-semibold'>
+                        2
+                    </span>
                 </span>
             </div>
         </>

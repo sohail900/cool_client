@@ -3,7 +3,7 @@ import React from 'react'
 const About = () => {
     return (
         <>
-            <section className='w-[100vw] h-auto flex flex-col items-center gap-8 px-[2rem] md:px-[3.5rem]'>
+            <section className='w-[100vw] h-auto flex flex-col  gap-8 px-[2rem] md:px-[3.5rem]'>
                 <h1 className='conatiner_name mt-24'>ABOUT US</h1>
                 <p>
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit.

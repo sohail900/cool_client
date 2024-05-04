@@ -1,8 +1,8 @@
 import { Outlet } from 'react-router-dom'
-import Hero from '../components/Hero'
-import NewCollection from '../components/CollectionContainer'
-import BestSelling from '../components/BestSelling'
-import AllProduct from '../components/AllProduct'
+import Hero from '../components/Hero/Hero'
+import NewCollection from '../components/NewCollection/CollectionContainer'
+import BestSelling from '../components/BestCollection/BestSelling'
+import AllProduct from '../components/AllProduct/AllProduct'
 //import TextScroll from '../components/textScroll'
 export default function Home() {
     return (

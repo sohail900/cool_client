@@ -1,66 +1,25 @@
-import { Formik } from 'formik'
-import FieldInput from '../components/FieldInput'
-const initialValues = {
-    fullname: '',
-    email: '',
-    password: '',
-    confirmPassword: '',
-}
+import { useRef } from 'react'
+import { Link } from 'react-router-dom'
+import { XCircle } from 'lucide-react'
+import { useHandleClick } from '../utility/utility'
+import FormikRegForm from '../components/InputForm/FormikRegForm'
 const Register = () => {
+    const ref = useRef<HTMLDivElement>(null)
+    useHandleClick(ref)
     return (
         <>
-            <section className='w-full h-full fixed top-0 right-0 bg-black/30  backdrop-blur-md z-50 grid place-items-center'>
-                <div className='w-2/5 bg-white py-10 px-10 rounded-lg'>
-                    <h1 className='text-center text-3xl font-semibold mb-3'>
-                        REGISTER
+            <section className='w-full h-full fixed top-0 right-0 bg-black/40  z-50 grid place-items-center '>
+                <div
+                    className='w-auto bg-white py-4 px-10 rounded-lg shadow-lg shadow-blue-600/10 relative'
+                    ref={ref}
+                >
+                    <h1 className='text-center text-3xl font-bold mb-7'>
+                        Sign Up
                     </h1>
-                    <Formik
-                        initialValues={initialValues}
-                        onSubmit={() => console.log('hello')}
-                    >
-                        {(props) => {
-                            return (
-                                <>
-                                    <form
-                                        method='post'
-                                        className='flex flex-col gap-3'
-                                    >
-                                        <FieldInput
-                                            value={props.values.fullname}
-                                            onChange={props.handleChange}
-                                            name={'fullname'}
-                                            type={'text'}
-                                            placeholder={'Fullname'}
-                                        />
-                                        <FieldInput
-                                            value={props.values.email}
-                                            onChange={props.handleChange}
-                                            name={'email'}
-                                            type={'email'}
-                                            placeholder={'Email'}
-                                        />
-                                        <FieldInput
-                                            value={props.values.password}
-                                            onChange={props.handleChange}
-                                            name={'password'}
-                                            type={'password'}
-                                            placeholder={'Password'}
-                                        />
-                                        <FieldInput
-                                            value={props.values.confirmPassword}
-                                            onChange={props.handleChange}
-                                            name={'confirmPassword'}
-                                            type={'password'}
-                                            placeholder={'Confirm Password'}
-                                        />
-                                        <button className='text-xl py-2 px-4 w-full bg-gray-200 font-semibold rounded-xl text-gray-500 transition delay-150  hover:bg-black hover:text-gray-100'>
-                                            Register
-                                        </button>
-                                    </form>
-                                </>
-                            )
-                        }}
-                    </Formik>
+                    <Link className='absolute top-4 right-3' to='../'>
+                        <XCircle />
+                    </Link>
+                    <FormikRegForm />
                 </div>
             </section>
         </>

@@ -2,8 +2,8 @@ import { useRef } from 'react'
 import ReactSlick from 'react-slick'
 import { ChevronLeft, ChevronRight } from 'lucide-react'
 import BestSellingProduct from './BestSellingProduct'
-import { bestProducts } from '../constants'
-import { handlePre, handleNext } from '../utility/utility'
+import { bestProducts } from '../../constants'
+import { handlePre, handleNext } from '../../utility/utility'
 const settings = {
     slidesToShow: 3,
     slidesToScroll: 1,

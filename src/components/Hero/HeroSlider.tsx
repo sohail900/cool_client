@@ -1,7 +1,7 @@
 import ReactSlider from 'react-slick'
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
-import { heroContents } from '../constants'
+import { heroContents } from '../../constants'
 const settings = {
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -19,22 +19,22 @@ export const Slider = ({ sliderRef }: any) => {
             <ReactSlider
                 ref={sliderRef}
                 {...settings}
-                className='w-[100vw] sm:w-full h-[300px] flex items-center justify-center'
+                className=' sm:w-full h-[300px] flex items-center justify-center'
             >
                 {heroContents?.map((elem, index) => {
                     return (
                         <>
                             <div
-                                className='-mt-10 p-0 flex items-center justify-center'
+                                className='mt-5 p-0 flex items-center justify-center'
                                 key={index}
                             >
                                 <img
                                     src={elem.image}
                                     alt='hero-image'
                                     loading='lazy'
-                                    className='w-[300px] md:w-[380px] mt-24'
+                                    className='w-[300px] md:w-[380px]'
                                 />
-                                <h2 className='text-4xl font-bold text-[#000000da] mt-72 '>
+                                <h2 className='text-4xl font-extrabold text-[#aaaeadb6]  absolute bottom-10 text-left sm:bottom-20'>
                                     ${elem.price}
                                 </h2>
                             </div>

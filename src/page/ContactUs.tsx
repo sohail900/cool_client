@@ -1,8 +1,8 @@
 import { PhoneCallIcon, MailIcon } from 'lucide-react'
-import ContactInputForm from '../components/ContactInputForm'
+import ContactInputForm from '../components/ContactUs/ContactInputForm'
 const ContactUs = () => {
     return (
-        <section className='w-[100vw] h-auto flex justify-center items-center flex-col px-6 md:px-8'>
+        <section className='w-[100vw] h-auto flex justify-center flex-col px-[2rem] md:px-[3.5rem]'>
             <h1 className='conatiner_name mb-8 mt-24'>CONTACT US</h1>
             <div className='w-full h-auto flex flex-col  justify-around items-center gap-3 md:flex-row '>
                 <div className='flex flex-col gap-4'>

@@ -20,13 +20,13 @@
     @apply text-[0.9rem];
 }
 .buttons {
-    @apply px-4  border rounded-full transition-all hover:border-[#000000] hover:text-[#ffffff] hover:bg-[#000000];
+    @apply px-4   rounded-full transition-all hover:border-[#000000] hover:text-[#ffffff] hover:bg-[#000000];
 }
 .navbar_items {
     @apply text-[0.75rem] font-semibold text-[#000000b9] px-10 py-2 transition-all hover:bg-[#4e4e4e23];
 }
 .conatiner_name {
-    @apply text-[1.6rem] font-semibold text-text_color mb-12;
+    @apply text-[1.6rem] font-semibold text-text_color;
 }
 .carosal_button {
     @apply bg-[#E5E5E5] w-10 h-10 rounded-full grid place-items-center transition-all ease-linear hover:bg-[#CACACB];
@@ -46,6 +46,14 @@
 }
 .input_field {
     @apply w-auto border-2 bg-[#6794d815] text-slate-700 px-3 py-3 rounded-xl text-[1.10rem] font-semibold sm:w-[400px];
+}
+.hr {
+    @apply w-full outline-none border border-black/10 rounded-full;
+}
+.btn_style {
+    @apply w-full rounded-full bg-black text-white 
+    transition-all hover:bg-black/60 focus:outline-none focus:ring-2 focus:ring-black/20
+     dark:bg-black;
 }
 .mask {
     mask: linear-gradient(

@@ -1,10 +1,15 @@
-import { FC } from 'react'
-import { IPRODUCT } from '../types/types'
+import { FC, useId } from 'react'
+import { Link } from 'react-router-dom'
+import { IPRODUCT } from '../../types/types'
 const BestSellingProduct: FC<IPRODUCT> = ({ index, elem }) => {
+    const id = useId()
     return (
         <>
             <div className='flex items-center justify-center gap-4' key={index}>
-                <div className='w-[400px] md:w-[300px] lg:w-[260px] xl:w-[320px] h-auto mb-10 cursor-pointer'>
+                <Link
+                    className='w-[400px] md:w-[300px] lg:w-[260px] xl:w-[320px] h-auto mb-10 cursor-pointer'
+                    to={`/detail/${id.toLowerCase()}`}
+                >
                     <img
                         src={elem.image}
                         alt={elem.title}
@@ -19,7 +24,7 @@ const BestSellingProduct: FC<IPRODUCT> = ({ index, elem }) => {
                             ${elem.price}
                         </p>
                     </div>
-                </div>
+                </Link>
             </div>
         </>
     )

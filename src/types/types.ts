@@ -38,6 +38,23 @@ export interface IInputProps<T> {
     value: string
     onChange: (e: T) => void
     name: string
-    type: string
+    type?: string
+    passtype?: string
     placeholder: string
+    checkpassword?: boolean
+    errors: string | undefined
+}
+////###PRODUCT DETAIL CONTENT.
+export type TProductDetail = {
+    title: string
+    type: string
+    price: number
+}
+export interface ICart {
+    title: string
+    price: number
+    image: string
+    type: string
+    size: number[]
+    quantity: number[]
 }

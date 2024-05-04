@@ -1,8 +1,15 @@
-import { ICOLLECTION } from '../types/types'
+import { useId } from 'react'
+import { Link } from 'react-router-dom'
+import { ICOLLECTION } from '../../types/types'
 const ProductCard = ({ elem, idx }: ICOLLECTION) => {
+    const id = useId()
     return (
         <>
-            <div className='w-[240px] relative' key={idx}>
+            <Link
+                className='w-[240px] relative'
+                key={idx}
+                to={`/detail/${id + idx}`}
+            >
                 <div className='text-left absolute px-4 py-3 z-10'>
                     <h2 className='text-xl'>{elem.title}</h2>
                     <p className='text-text_color2'>{elem.type}</p>
@@ -15,7 +22,7 @@ const ProductCard = ({ elem, idx }: ICOLLECTION) => {
                 <p className='bg-colorBackground  font-semibold text-black w-20 h-9 p-4 rounded-full backdrop-blur-md shadow-md  shadow-gray-400 grid place-content-center absolute -bottom-5 left-[50%] -translate-x-[50%]'>
                     ${elem.price}
                 </p>
-            </div>
+            </Link>
         </>
     )
 }

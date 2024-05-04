@@ -21,11 +21,11 @@ export const ResponsiveNav = ({ setMenu }: TSetMenu) => {
                         </>
                     )
                 })}
-                <NavLink to='login' className='navbar_items'>
-                    SIGN IN
+                <NavLink to='./login' className='navbar_items'>
+                    Sign In
                 </NavLink>
-                <NavLink to='login' className='navbar_items'>
-                    SIGN UP
+                <NavLink to='./register' className='navbar_items'>
+                    Register
                 </NavLink>
             </ul>
         </>

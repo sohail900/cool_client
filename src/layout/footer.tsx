@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom'
 const Footer = () => {
     return (
         <>
-            <main className='mt-32 px-3 pt-5  bg-black text-white relative sm:px-10'>
-                <h1 className='text-2xl font-bold text-white text-center bg-black absolute -top-6 left-1/2 -translate-x-1/2 py-1 px-3 rounded-lg sm:text-3xl'>
+            <main className='mt-40 px-3 pt-5  bg-black text-white relative sm:px-10'>
+                <h1 className='text-2xl font-bold text-white text-center bg-black absolute -top-8 left-1/2 -translate-x-1/2 py-1 px-3 rounded-t-lg sm:text-3xl'>
                     COOL KICKS
                 </h1>
                 <section className='flex flex-col  justify-between mt-8 lg:flex-row'>

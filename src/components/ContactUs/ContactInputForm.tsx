@@ -1,5 +1,5 @@
 import { Formik } from 'formik'
-
+import { contactusSchema } from '../../schema/validationSchema'
 const initialValues = {
     fullname: '',
     email: '',
@@ -11,11 +11,12 @@ const ContactInputForm = () => {
             <Formik
                 initialValues={initialValues}
                 onSubmit={() => console.log('hello')}
+                validationSchema={contactusSchema}
             >
                 {(props) => {
                     return (
                         <>
-                            <form method='post' className='flex flex-col gap-5'>
+                            <form method='post' className='flex flex-col gap-3'>
                                 <input
                                     type='text'
                                     name='fullname'
@@ -23,9 +24,13 @@ const ContactInputForm = () => {
                                     value={props.values.fullname}
                                     placeholder='John Wick'
                                     className='input_field'
-                                    autoFocus
+                                    required
                                 />
-
+                                {props.errors.fullname && (
+                                    <p className='-mt-2 text-red-700/70 text-[0.9rem] font-semibold'>
+                                        {props.errors.fullname}
+                                    </p>
+                                )}
                                 <input
                                     type='email'
                                     name='email'
@@ -33,8 +38,13 @@ const ContactInputForm = () => {
                                     value={props.values.email}
                                     placeholder='example@gmail.com'
                                     className='input_field'
+                                    required
                                 />
-
+                                {props.errors.email && (
+                                    <p className='-mt-2 text-red-700/70 text-[0.9rem] font-semibold'>
+                                        {props.errors.email}
+                                    </p>
+                                )}
                                 <textarea
                                     rows={4}
                                     name='message'
@@ -42,10 +52,19 @@ const ContactInputForm = () => {
                                     value={props.values.message}
                                     placeholder='Enter Your Message'
                                     className='input_field'
+                                    required
                                 ></textarea>
-
-                                <button className='text-xl py-2 px-4 w-full bg-gray-200 font-semibold rounded-xl text-gray-500 transition delay-150  hover:bg-black hover:text-gray-100'>
-                                    Submit
+                                {props.errors.message && (
+                                    <p className='-mt-2 text-red-700/70 text-[0.9rem] font-semibold'>
+                                        {props.errors.message}
+                                    </p>
+                                )}
+                                <button
+                                    type='submit'
+                                    className='btn_style px-3 py-3 font-semibold'
+                                    disabled={!!props.errors.message}
+                                >
+                                    Send Message
                                 </button>
                             </form>
                         </>

@@ -1,7 +1,7 @@
 import { useState } from 'react'
-import { matchedProduct } from '../utility/utility'
-import { ISHOEPRO } from '../types/types'
-import ProductCard from './ProductCard'
+import { matchedProduct } from '../../utility/utility'
+import { ISHOEPRO } from '../../types/types'
+import ProductContainer from './ProductContainer'
 const AllProduct = () => {
     const [products, setProducts] = useState<ISHOEPRO[] | null>(null)
     const [showTitle, setShowTitle] = useState<string>('All')
@@ -52,15 +52,7 @@ const AllProduct = () => {
                 <h2 className='mt-2 text-xl font-semibold text-text_color'>
                     {showTitle}
                 </h2>
-                <div className='flex justify-center gap-10 flex-wrap mt-3 '>
-                    {products?.map((elem, index) => {
-                        return (
-                            <>
-                                <ProductCard elem={elem} idx={index} />
-                            </>
-                        )
-                    })}
-                </div>
+                <ProductContainer products={products} />
             </section>
         </>
     )
